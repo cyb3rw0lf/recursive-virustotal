@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # coding: utf-8
  
 __author__ = 'Fabian Voith'
@@ -153,7 +154,7 @@ class entityHandler:
 
     
 # Initialize program / load config
-CONFIG_FILE= str(os.path.dirname(os.path.abspath(__file__)))+'\\config.yaml'
+CONFIG_FILE= str(os.path.dirname(os.path.abspath(__file__)))+'/config.yaml'
 try:
     with open(CONFIG_FILE, 'r') as config_file:
         config = yaml.safe_load(config_file)
